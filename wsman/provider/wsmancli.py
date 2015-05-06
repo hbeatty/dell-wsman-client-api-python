@@ -408,6 +408,7 @@ class WSManCLI(WSManProvider):
         remote_ += '-p %s ' % remote.password
         remote_ += '-h %s ' % remote.ip
         remote_ += '-P 443 -j utf-8 -y basic -V -v -c Dummy '
+        remote_ += '--non-interactive '
         return remote_
     
     
