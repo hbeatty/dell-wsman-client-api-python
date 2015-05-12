@@ -732,12 +732,12 @@ class WSManCLI(WSManProvider):
                 value_ = value[0] if value else ''
                 value_ = value_ if value_ else ''
                 
-                # JCT: used to wrap values with paces in double quotes - now we wrap the entire uri
+                # JCT: used to wrap values with spaces in double quotes - now we wrap the entire uri
                 safe_value = value_
                 pairs.append('%s=\"%s\"' % (key, safe_value))
             
             # Get the query parameter for command construction
-            query = ','.join(pairs)
+            query = '&'.join(pairs)
             classname = reference.classname
             
             # Construct the command
