@@ -1,5 +1,8 @@
 # dell-wsman-client-api-python
 
+## Introduction
+Used to communicate with the Dell iDRAC via winrm (Windows) or wsman (OpenWSMAN).
+
 ## Install
 
 ```
